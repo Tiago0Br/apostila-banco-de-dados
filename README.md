@@ -1,5 +1,41 @@
 # Comandos SQL
 
+Lista de comandos SQL aprendidos na disciplina de Banco de dados.
+
+##  Lista de Comandos
+
+<details>
+<summary>
+SELECT
+</summary>
+
+&emsp;[FROM](#from)</br>
+&emsp;[WHERE](#where)</br>
+&emsp;[AND](#and)</br>
+&emsp;[AS](#as)</br>
+&emsp;[BETWEEN](#between)</br>
+&emsp;[IN](#in)</br>
+&emsp;[COUNT](#count)</br>
+&emsp;[SUM](#sum)</br>
+&emsp;[AVG](#avg)</br>
+&emsp;[SUBSTRING](#substring)</br>
+&emsp;[REPLACE](#replace)</br>
+&emsp;[CONCAT](#concat)</br>
+&emsp;[UPPER](#upper)</br>
+&emsp;[LOWER](#lower)</br>
+&emsp;[LEFT](#left)</br>
+&emsp;[RIGHT](#right)</br>
+&emsp;[LENGTH](#length)</br>
+&emsp;[LIMIT](#limit)</br>
+&emsp;[DISTINCT](#distinct)</br>
+&emsp;[GROUP BY](#group-by)</br>
+&emsp;[HAVING](#having)</br>
+
+</details>
+
+---
+
+##  Comandos
 
 ## SELECT
 
@@ -7,7 +43,7 @@ O comando **SELECT** permite realizar buscas em uma ou várias tabelas.
 
 #### FROM
 
-Tabela onde será realizada a busca
+Tabela onde será realizada a busca</br>
 **Exemplos**:
 ```sql
 SELECT *	-- * seleciona todas as colunas
@@ -20,7 +56,7 @@ FROM autores;
 
 #### WHERE
 
-Condição da busca que será feita, serão retornados todos os registros que satisfazerem essa condição.
+Condição da busca que será feita, serão retornados todos os registros que satisfazerem essa condição.</br>
 **Exemplos**:
 ```sql
 SELECT *
@@ -39,7 +75,7 @@ WHERE id_autor <> 1; -- Retorna autores com ID diferente de 1
 ```
 
 #### AND
-Possibilita adicionar várias condições de uma vez.
+Possibilita adicionar várias condições de uma vez.</br>
 **Exemplo**:
 ```sql
 SELECT *
@@ -50,7 +86,7 @@ WHERE id_autor > 1
 ```
 
 #### AS
-Dá um apelido a uma tabela ou a um campo da tabela.
+Dá um apelido a uma tabela ou a um campo da tabela.</br>
 **Exemplo**:
 ```sql
 SELECT a.nome AS autor -- Apelida a coluna "nome" de "autor"
@@ -68,7 +104,7 @@ FROM autores a;
 ```
 
 #### BETWEEN
-Possibilita fazer uma verificação se o valor de um campo está entre um intervalo de valores.
+Possibilita fazer uma verificação se o valor de um campo está entre um intervalo de valores.</br>
 **Exemplo**:
 ```sql
 SELECT *
@@ -77,7 +113,7 @@ WHERE id_autor BETWEEN 2 AND 5; -- Retorna autores com IDs entre 2 e 5
 ```
 
 #### IN
-Possibilita fazer uma verificação se determinado campo possui um valor dentro de um intervalo de valores pré-definido.
+Possibilita fazer uma verificação se determinado campo possui um valor dentro de um intervalo de valores pré-definido.</br>
 **Exemplo**:
 ```sql
 SELECT *
@@ -92,9 +128,25 @@ SELECT COUNT(*) -- Exibe a quantidade de autores da tabela
 FROM autores;
 ```
 
+#### SUM
+Retorna a soma dos valores de determinada coluna.</br>
+**Exemplo:**
+```sql
+SELECT SUM(a.id_autor) -- Soma os IDs de todos os autores
+FROM autores a;
+```
+
+#### AVG
+Retorna a média dos valores de determinada coluna.</br>
+**Exemplo:**
+```sql
+SELECT AVG(a.id_autor) -- Tira a média dos IDs de todos os autores
+FROM autores a;
+```
+
 #### SUBSTRING
 
-"Recorta" o conteúdo de uma string com base no intervalo de valores passados
+"Recorta" o conteúdo de uma string com base no intervalo de valores passados</br>
 **Exemplo**:
 ```sql
 SELECT SUBSTRING(nome, 2, 8) -- Recorta o nome do autor da posição 2 até a 8
@@ -111,7 +163,7 @@ FROM autores;
 
 #### CONCAT
 
-Função para concatenar strings.
+Função para concatenar strings.</br>
 **Exemplo**:
 ```sql
 SELECT CONCAT(nome, ' ', sobrenome) -- Concatena o nome e o sobrenome do autor
@@ -120,7 +172,7 @@ FROM autores;
 
 #### UPPER
 
-Função para deixar as letras em caixa alta
+Função para deixar as letras em caixa alta</br>
 **Exemplo**:
 ```sql
 SELECT UPPER(nome) -- Exibe o nome em caixa alta
@@ -129,7 +181,7 @@ FROM autores;
 
 #### LOWER
 
-Função para deixar as letras em caixa baixa
+Função para deixar as letras em caixa baixa</br>
 **Exemplo**:
 ```sql
 SELECT LOWER(nome) -- Exibe o nome em caixa baixa
@@ -138,7 +190,7 @@ FROM autores;
 
 #### LEFT
 
-Função para trazer o conteúdo à esquerda da string de uma posição informada.
+Função para trazer o conteúdo à esquerda da string de uma posição informada.</br>
 **Exemplo:**
 ```sql
 SELECT LEFT(nome, 5) -- Exibe os primeiros 5 caracteres da string
@@ -147,7 +199,7 @@ FROM autores;
 
 #### RIGHT
 
-Função para trazer o conteúdo à direita da string de uma posição informada.
+Função para trazer o conteúdo à direita da string de uma posição informada.</br>
 **Exemplo:**
 ```sql
 SELECT RIGHT(nome, 5) -- Exibe os últimos 5 caracteres da string
@@ -156,7 +208,7 @@ FROM autores;
 
 #### LENGTH
 
-Função para contar a quantidade de caracteres de uma string.
+Função para contar a quantidade de caracteres de uma string.</br>
 **Exemplo:**
 ```sql
 SELECT LENGTH(nome) AS 'Tamanho do nome' -- Exibe o total de caracteres do nome
@@ -165,7 +217,7 @@ FROM autores;
 
 #### LIMIT
 
-Limita a quantidade de registros retornados em uma pesquisa
+Limita a quantidade de registros retornados em uma pesquisa</br>
 **Exemplo:**
 ```sql
 SELECT *
@@ -174,7 +226,7 @@ LIMIT 5; -- Serão exibidos no máximo 5 autores
 ```
 
 #### DISTINCT
-Traz apenas resultados distintos, por exemplo: se houver 3 cadastros com o mesmo nome, irá trazer apenas 1 deles.
+Traz apenas resultados distintos, por exemplo: se houver 3 cadastros com o mesmo nome, irá trazer apenas 1 deles.</br>
 **Exemplo:**
 ```sql
 SELECT DISTINCT nome 
@@ -184,7 +236,7 @@ FROM autores;
 
 #### GROUP BY
 
-Agrupa elementos por determinado campo.
+Agrupa elementos por determinado campo.</br>
 **Exemplo:**
 ```sql
 SELECT id_nacionalidade, COUNT(*) AS 'Quantidade de autores'
@@ -194,7 +246,7 @@ GROUP BY id_nacionalidade; -- Agrupa os autores pela nacionalidade
 
 #### HAVING
 
-Adiciona uma condição para o agrupamento, portando é utilizado após o GROUP BY.
+Adiciona uma condição para o agrupamento, portando é utilizado após o GROUP BY.</br>
 **Exemplo**: 
 ```sql
 SELECT id_nacionalidade, COUNT(*) AS 'Quantidade de autores'
