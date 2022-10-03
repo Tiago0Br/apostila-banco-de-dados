@@ -126,4 +126,4 @@ Para obter o subTotal e totalGeral basta usar o SELECT utilizando funções mate
 
 #### Vídeo sobre normalização
 
-[![Normalização de Banco de Dados](https://res.cloudinary.com/marcomontalbano/image/upload/v1664757582/video_to_markdown/images/youtube--TOFZQ5wm1UI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=TOFZQ5wm1UI "Normalização de Banco de Dados")
+https://user-images.githubusercontent.com/52180428/193702403-896be8cc-2f65-4b6a-bb5d-4479fc0b2ba5.mp4
