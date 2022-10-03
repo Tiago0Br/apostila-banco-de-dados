@@ -4,9 +4,9 @@
 NORMALIZAÇÃO
 </summary>
 
-&emsp;&emsp;[1ª FORMA NORMAL](#1c2aa-forma-normal-1)</br>
-&emsp;&emsp;[2ª FORMA NORMAL](#2c2aa-forma-normal-1)</br>
-&emsp;&emsp;[3ª FORMA NORMAL](#3c2aa-forma-normal-1)</br>
+&emsp;&emsp;[1ª FORMA NORMAL](#1ª-forma-normal)</br>
+&emsp;&emsp;[2ª FORMA NORMAL](#2ª-forma-normal)</br>
+&emsp;&emsp;[3ª FORMA NORMAL](#3ª-forma-normal)</br>
 
 </details>
 
@@ -20,7 +20,7 @@ Quando todos os atributos contêm apenas um valor correspondente, singular e nã
 **Exemplo 1:**
 
 Clientes
-|Código|Nome|Endereco|Fone
+|Código|Nome|Endereco|Fone |
 |--|--|--|--|
 |10 |Diogo |Rua A, 10 |1111-1111 |
 |20 |Fábio |Rua B, 25 |2222-2222<br/> 3333-3333 |
@@ -65,7 +65,7 @@ Fornecedor
 
 Produto
 |codProduto|descricaoProduto|
-|--|--|--|--|
+|--|--|
 |1 |Iphone X|
 |2 |Notebook Asus|
 |3 |Samsung S12|
@@ -90,7 +90,7 @@ Fornecedor
 
 Produto
 |codProduto|descricaoProduto|
-|--|--|--|--|
+|--|--|
 |1 |Iphone X|
 |2 |Notebook Asus|
 |3 |Samsung S12|
@@ -99,4 +99,6 @@ Para obter o subTotal e totalGeral basta usar o SELECT utilizando funções mate
 
 #### Vídeo sobre normalização
 
-<iframe  width="560"  height="315"  src="https://www.youtube.com/embed/TOFZQ5wm1UI"  title="YouTube video player"  frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+
+<iframe  width="560"  height="315"  src="https://www.youtube.com/embed/TOFZQ5wm1UI"  title="YouTube video player"  frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen>
+</iframe>
