@@ -1,6 +1,6 @@
 ##  Lista de Conteúdos
 [SELECT](./README.md)<br />
-[NORMALIZAÇÃO](#)
+**NORMALIZAÇÃO**
 
 ##  Normalização
 <details>
