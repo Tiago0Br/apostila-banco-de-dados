@@ -1,6 +1,10 @@
 Lista de comandos SQL aprendidos na disciplina de Banco de dados.
 
 ##  Lista de Conteúdos
+[SELECT](#)
+[NORMALIZAÇÃO](./normalizacao.md)
+
+## Lista de Comandos
 
 <details>
 <summary>
@@ -30,8 +34,6 @@ SELECT
 &emsp;&emsp;[HAVING](#having)</br>
 
 </details>
-
-[NORMALIZAÇÃO](./normalizacao.md)
 
 ---
 
