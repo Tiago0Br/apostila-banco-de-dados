@@ -1,5 +1,5 @@
 ##  Lista de Conteúdos
-[SELECT](./README.md)
+[SELECT](./README.md)<br />
 [NORMALIZAÇÃO](#)
 
 ##  Normalização
@@ -38,7 +38,7 @@ Clientes
 
 Fone Clientes
 |Código|Fone|
-|--|--|--|--|
+|--|--|
 |10 |1111-1111|
 |20 |2222-2222|
 |20 |3333-3333|

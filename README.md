@@ -1,7 +1,7 @@
 Lista de comandos SQL aprendidos na disciplina de Banco de dados.
 
 ##  Lista de Conteúdos
-[SELECT](#)
+[SELECT](#)<br />
 [NORMALIZAÇÃO](./normalizacao.md)
 
 ## Lista de Comandos
